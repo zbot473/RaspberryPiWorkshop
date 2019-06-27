@@ -1,0 +1,14 @@
+# Python
+
+These lessons serve as a simple introduction to the Python 3 syntax that is required for the Raspberry Pi lessons. Depending on time constraints, one do this on seperate day, before the Raspberry Pi lessons start. These are not meant to be given to students, but are rather a guide 
+
+## Subjects Covered
+
+1. Hello World (Introduction)
+2. Variables
+3. Operators 
+   1. Numerical
+   2. String
+   3. Comparison
+   4. Logic
+4. Conditionals
