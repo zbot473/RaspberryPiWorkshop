@@ -1,5 +1,4 @@
 import pigpio
-from time import sleep
 gpio = pigpio.pi()
 gpio.set_mode(13, pigpio.OUTPUT)
 gpio.set_mode(19, pigpio.OUTPUT)
@@ -13,20 +12,26 @@ def change_RGB(r, g, b):
     gpio.write(13, b)
 
 
+def button_wait():
+    while not(gpio.wait_for_edge(20)):
+        pass
+    
+
 while True:
     change_RGB(0, 0, 0)
-    sleep(1)
+    button_wait()
     change_RGB(1, 0, 0)
-    sleep(1)
+    button_wait()
     change_RGB(0, 1, 0)
-    sleep(1)
+    button_wait()
     change_RGB(0, 0, 1)
-    sleep(1)
+    button_wait()
     change_RGB(1, 1, 0)
-    sleep(1)
+    button_wait()
     change_RGB(1, 0, 1)
-    sleep(1)
+    button_wait()
     change_RGB(0, 1, 1)
-    sleep(1)
+    button_wait()
     change_RGB(1, 1, 1)
-    sleep(1)
+    button_wait()
+    
