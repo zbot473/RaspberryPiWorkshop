@@ -4,7 +4,6 @@ gpio = pigpio.pi()
 gpio.set_mode(13, pigpio.OUTPUT)
 gpio.set_mode(19, pigpio.OUTPUT)
 gpio.set_mode(26, pigpio.OUTPUT)
-gpio.set_mode(20, pigpio.INPUT)
 
 
 def change_RGB(r, g, b):
